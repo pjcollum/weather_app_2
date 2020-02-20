@@ -1,0 +1,29 @@
+<div id="cheese">
+<h1>Current Weather Data</h1>
+
+
+{{!-- <ul>
+    <li>Temp: {{temp}}</li>
+    <li>Description: {{description}}</li>
+    <li>City: {{city}}</li>
+</ul>
+
+<hr> --}}
+
+<ul>
+    {{#each data}}
+        <li>{{@key}} : {{this}}</li>
+    {{/each}}
+</ul>
+
+ <form action="/" method="POST">     {{!--posts to the / --}}
+    <label for="location">Location:</label>
+    <input type="text" name="location">
+    <label for="location">Country Code:</label>
+    <input type="text" name="countryCode">
+    <br>
+    <input type="submit" value="send">
+</form>
+     
+
+</div>
